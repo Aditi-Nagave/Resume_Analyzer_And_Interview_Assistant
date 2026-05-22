@@ -41,3 +41,31 @@ generate:
 Resume Context:
 {context}
 """
+
+MOCK_INTERVIEW_PROMPT = """
+You are an AI interviewer.
+
+Based on the candidate resume:
+
+{resume}
+
+Ask one professional interview question.
+"""
+
+FEEDBACK_PROMPT = """
+Evaluate the following interview answer.
+
+Question:
+{question}
+
+Answer:
+{answer}
+
+Evaluate:
+1. Confidence
+2. Technical Accuracy
+3. Communication
+4. Relevance
+
+Give scores out of 10 and feedback.
+"""

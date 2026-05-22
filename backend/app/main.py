@@ -12,6 +12,14 @@ from app.api.routes.interview_routes import (
     router as interview_router
 )
 
+from app.api.routes.mock_interview_routes import (
+    router as mock_router
+)
+
+from app.api.routes.voice_routes import (
+    router as voice_router
+)
+
 app = FastAPI(
     title="AI Resume GenAI System"
 )
@@ -19,6 +27,8 @@ app = FastAPI(
 app.include_router(resume_router)
 app.include_router(jd_router)
 app.include_router(interview_router)
+app.include_router(mock_router)
+app.include_router(voice_router)
 
 @app.get("/")
 def home():

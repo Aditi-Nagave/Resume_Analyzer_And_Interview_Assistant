@@ -22,3 +22,7 @@ requests
 python-dotenv
 
 pydantic
+
+openai-whisper
+SpeechRecognition
+pyaudio
